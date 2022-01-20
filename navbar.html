@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        /*CSS reset*/
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            width: 100%;
+        }
+          /*navbar*/
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+        }
+        nav:before {
+            content: "";
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        #upper{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            background-color: rgb(234,239,255);
+        }
+        #upper ul{
+            width: 28%;
+            display: flex;
+            list-style: none;
+            gap: 10%;
+            margin: 0.5% 20% 0.5% 7%;
+        }
+        #upper ul li {
+            font-weight: 300;
+        }
+        #upper ul :nth-child(1) {
+            color: rgb(254,92,36);
+        }
+        #social{
+            width: 10%; 
+            display: flex;
+            list-style: none;
+            gap: 10%;
+            margin: 0.5% 3% 0.5% 10%;
+        }
+        #upper img{
+            width: 15px;
+            height: 15px;
+        }
+        #tel{
+            display: flex; flex-wrap: nowrap;
+            gap: 5%;
+            margin: 0.5% 0% 0.5% 0%;
+            width: 10%;
+            height: 15px;
+        }
+        #tel p{
+          color: black;
+          font-size: small;
+          line-height: 0%;
+          padding-top: 15px;
+        }
+        #lower{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            background-color: rgb(255,255,255);  
+            border-bottom: 1px solid beige;      
+        }
+        #logo{
+            margin: 2% 10%;
+        }
+        #lower ul{
+            width: 40%;
+            display: flex;
+            list-style: none;
+            gap: 10%;
+            margin: 2% 0%;
+        }
+        .item a:hover{
+            color: rgb(254,92,36);
+        }
+        .item a{
+            text-decoration: none;          
+            color: rgb(90,62,114);
+            font-size: large;
+        }
+        #lower button{
+            width: 8%;
+            height: 50px;
+            background-color: rgb(254,92,36);
+            color: whitesmoke;
+            border: 1px solid rgb(254,92,36);
+            margin: 1.5% 15%;
+            font-size: large;
+        }
+        #msnavdrop {
+            position: fixed;
+            visibility: hidden;
+            z-index: 5;
+            margin-top: 80px;
+            width: 100%;
+            height: 280px;
+            background-color: whitesmoke;
+        }
+        #msnavdrop > div {
+            font-size: 20px;
+            margin-left: 10%;
+            height: 280px;
+        }
+        #msnavdrop > div > div {
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        #msnavdrop > div > div:hover {
+            color: rgb(254,92,36);
+        }
+        #msnavdrop > div > div > div {
+            margin-top: 10px;
+            padding: 5px 0 5px 20px;
+            border-radius: 5px;
+            width: 85%;
+        }
+        #msnavdrop > div > div > div {
+            color: black !important;
+            cursor: default;
+            font-size: 17px;
+        }
+        #msnavdrop > div > div > div > div,a {
+            margin: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            margin-left: 0;
+        }
+        .mssub {
+            display: none;
+        }
+
+
+        /*media-query*/
+        @media only screen and (max-width: 1174px) {
+            #navbar {
+                display: flex;
+            }
+            #upper {
+                display: none;
+            }
+            #lower{
+                height: 60px;
+            }
+            #logo img{
+                margin-top: 20px;
+            }
+            #lower ul {
+                display: none;
+            }
+            .book {
+                display: none;
+            }
+            .item {
+                display: none;
+            }
+            #blogdrop {
+                display: none;
+            }
+            #pagesdrop {
+                display: none;
+            }
+        
+            #burger {
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                width: 40px;
+                height: 40px;
+                margin-top: 10px;
+                margin-left: 85%;
+                cursor: pointer;
+            }
+            #burger > div {
+                width: 90%;
+                height: 1px;
+                background-color: rgb(41, 41, 41);
+                border: 1px solid rgb(41, 41, 41);
+                margin: auto;
+            }
+        }
+        
+
+        main{
+            padding-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="upper">
+            <ul>
+                <li>Top destinations</li>
+                <li>Asia</li>
+                <li>Europe</li>
+                <li>America</li>
+            </ul>
+            <div id="social">
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/128/1077/1077041.png"/></a>
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png"/></a>
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/128/2111/2111819.png"/></a>
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/128/220/220377.png"/></a>
+            </div>
+            <div id="tel">
+                <a><img src="https://cdn-icons-png.flaticon.com/128/126/126509.png"/></a>
+                <p>+919889889989</p>
+            </div>
+        </div>
+        <div id="lower">
+            <div id="logo">
+                <img src="data:image/webp;base64,UklGRtABAABXRUJQVlA4TMMBAAAvaEAFEKdAkG1TsOX+ZlcQCCQB7C+6gEAgiXnbbQiybebPNKYP4QlWR6cHgwhClmTbcdvc+zAQwAPwPO1/swAeKSn5j+j/BFjcVmxTXDPetFNEDG9r3IaNcSsvmqWUuihJvh9t6e+hJGkfNJbyX6hLfI9+sjHGwPulhb5xBZGQ2maUWho0ytWvpanBaq0VwKy1KjSKhGKHnkQkFHuCAIYv8dwAZJJykcw8NihJGqAkJXHfF4s81icmUEnGQ6J37LYOveE1wOhtNzLJBiRS8m5yK5v8Xg3ILpqvksyAkOna6VKAeSfGCl0mcKvBwpJhXDssLsWngRQYyeoKAHBjANjZvQLAdrooAAjJ4OuZpCnJcQBgveZIX8crDAB215JLKZWrubSRHBdJ5IMlOk/2OtnkxXtjkiyRDCej+58CkkIyn9ImlSEfk513Ird6EpJiAD6iLLh/uHbTdwGY/ARd8iIkI/D78/Pzd+g7+MTQ+Vjp9gJbmLoKSWZ8fX9/f/8cbJNuOOUJsr0AdTnP3e8BslSH+jh8Y6evQPYofB3IywAukgFA21VdMooH7QWB5AUAKrswccLzprWq4WGbcxpePGopdcALAA==" alt="Martine."/>
+             </div>
+     
+             <ul>
+                 <li class="item"><a href="#">Home</a></li>
+                 <li class="item"><a href="#">About</a></li>
+                 <li class="item"><a href="#">Packages</a></li>
+                 <li id="blog" class="item"><a href="#">Blog</a></li>
+                 <li id="pages" class="item"><a href="#">Pages</a></li>
+                 <li class="item"><a href="#">Contact</a></li>
+             </ul>
+             <button class="book">Book Now</button>
+        </div>
+
+        <div id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+    </nav>
+    <div id="blogdrop">
+        <div class="droplist">
+            <div><a href="">Blog</a></div>
+            <div><a href="">Single Blog</a></div>
+        </div>
+    </div>
+    <div id="pagesdrop">
+        <div class="droplist">
+            <div><a href="">Top Place</a></div>
+            <div><a href="">Tour Details</a></div>
+        </div>
+    </div>
+
+    <div id="msnavdrop">
+        <div>
+            <div id="msnavdrophome">Home</div>
+            <div id="msnavdropabout">About</div>
+            <div id="msnavdroppackages">Packages</div>
+            <div id="msnavdropblog">Blog</div>
+            <div id="msnavdroppages">Pages</div>
+            <div id="msnavdropcontact">Contact</div>
+        </div>
+    </div>
+    <div class="mssub">
+        <div id="msblogdropsub">
+            <div><a href="">Blog</a></div>
+            <div><a href="">Single Blog</a></div>
+            
+        </div>
+        <div id="mspagesdropsub">
+            <div><a href="">Top Place</a></div>
+            <div><a href="">Tour Details</a></div>
+        </div>
+    </div>
+
+
+    <main>
+        <form>
+            <select placeholder="Choose place" class="booking">
+                <option>One</option>
+                <option>Two</option>
+                <option>Three</option>
+            </select>
+            <input type="date" placeholder="CheckIn" class="booking">
+            <input type="date" placeholder="CheckOut" class="booking">
+            <select aria-placeholder="Persons" class="booking">
+                <option>One</option>
+                <option>Two</option>
+                <option>Three</option>
+            </select>
+        </form>
+    </main>
+    <script>
+        var blog = document.getElementById("blog");
+        var pages = document.getElementById("pages");
+
+        var blogdrop = document.getElementById("blogdrop")
+        var pagesdrop = document.getElementById("pagesdrop")
+
+        var count1 = 0;
+        var count2 = 0;
+
+        function showAndHideBlogdrop() {
+            if ( count1%2===0){
+                blogdrop.style.visibility = "visible"
+            }
+            else {
+                blogdrop.style.visibility = "hidden"
+            }
+            count1++
+        }
+        function showAndHidePagedrop() {
+            if ( count2%2===0){
+                pagesdrop.style.visibility = "visible"
+            }
+            else {
+                pagesdrop.style.visibility = "hidden"
+            }
+            count2++
+        }
+
+
+        blog.addEventListener('click', showAndHideBlogdrop);
+        pages.addEventListener('click', showAndHidePagedrop);
+
+
+
+
+        var burger = document.getElementById("burger")
+        var msnavdrop = document.getElementById("msnavdrop")
+
+        count = 2
+
+        function burgerAndCrossfunction () {
+            if ( count%2===0 ) {
+                burger.style.display = "flex"
+                msnavdrop.style.visibility = "visible"
+            }
+            else if ( count%2!=0 ) {
+                burger.style.display = "flex"
+                msnavdrop.style.visibility = "hidden"
+            }
+            count++
+        }
+
+        document.getElementById("burger").addEventListener('click', burgerAndCrossfunction)
+
+        var msnavdropblog = document.getElementById("msnavdropblog")
+        var msnavdroppages = document.getElementById("msnavdroppages")
+
+        var msnavdropblogsub = document.getElementById("msnavdropblogsub")
+        var msnavdroppagessub = document.getElementById("msnavdroppagessub")
+
+        var bcount = 2
+        var pcount = 2
+
+        function blogsub () {
+            if (bcount%2===0) {
+                msnavdropblog.appendChild(msnavdropblogsub)
+            }
+            else {
+                msnavdropblog.removeChild(msnavdropblog.childNodes[1]);
+            }
+            bcount++
+        }
+        function pagessub () {
+            if (pcount%2===0) {
+                msnavdroppages.appendChild(msnavdroppagessub)
+            }
+            else {
+                msnavdroppages.removeChild(msnavdroppages.childNodes[1]);
+            }
+            bcount++
+        }
+         msnavdropblog.addEventListener('click',blogsub)
+        msnavdroppages.addEventListener('click',pagessub)
+
+    </script>
+</body>
+</html>
+
+
+
