@@ -1,0 +1,31 @@
+990-tab
+450-mobile
+
+var image = document.createElement("img");
+        var main = document.getElementById("main");
+        var img_array = ["https://images.pexels.com/photos/257385/pexels-photo-257385.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500","https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500","https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500","https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500","https://images.pexels.com/photos/7234381/pexels-photo-7234381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"];
+        var index = 0;
+        function slide() {
+            image.setAttribute("src", img_array[index]);
+            index++;
+            if (index >= img_array.length) {
+                index = 0;
+            }
+        }
+        setInterval("slide()", 2000);
+        main.append(image);
+
+
+
+
+
+
+
+
+
+Tab
+min-1174
+max-751px
+
+Mobile
+max-751
