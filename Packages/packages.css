@@ -1,0 +1,694 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+.div1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("https://preview.colorlib.com/theme/martine/img/xbreadcrumb.png.pagespeed.ic.OfmcEjG4sq.jpg");
+
+  /* background-color: rgb(6,38,73); */
+  height: 393px;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.packageContent {
+  padding: 0%;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Open sans", sans-serif;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+.packageText {
+  font-family: "Open sans", sans-serif;
+  padding: 0%;
+  font-size: 80px;
+  height: fit-content;
+  font-weight: 600;
+  color: white;
+}
+
+.breakdiv2media2 {
+  display: none;
+}
+.breakdiv2media1 {
+  display: block;
+}
+.MadivAsia {
+  font-size: 30px;
+}
+
+.breakdiv2media3 {
+  display: none;
+}
+
+.div2 {
+  margin-top: 110px;
+  text-align: center;
+}
+.div3dark {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  font-size: 45px;
+  color: rgb(12, 62, 114);
+  line-height: 45px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+p {
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 28px;
+  word-spacing: 0.5px;
+}
+
+.checked {
+  color: rgb(252, 180, 47);
+  margin-left: 5px;
+}
+
+.hotelHeading {
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(12, 80, 137);
+}
+
+.hotelcard {
+  width: fit-content;
+}
+
+hr {
+  border: solid rgba(0, 0, 0, 0.1);
+  border-width: 0.1px;
+}
+
+.hotel {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 77px;
+}
+
+.hotelcontent {
+  line-height: 34px;
+}
+
+.div3 {
+  background-image: url("https://preview.colorlib.com/theme/martine/img/xevent_bg.png.pagespeed.ic.hDegBD_q05.jpg");
+  height: 820px;
+  margin-top: 110px;
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 20px;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+#slide1 {
+  width: 545px;
+  height: 555px;
+  background-color: white;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-top: 25px;
+  position: relative;
+}
+
+.slideContainer1 {
+  height: fit-content;
+
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#div3date {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.div3dark {
+  color: rgba(0, 0, 0, 0.6);
+}
+.btnPlan {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color: #fe5c24;
+  padding: 17px 30px;
+  color: white;
+  border: 0px;
+  margin-top: 20px;
+}
+
+.btnPlan:hover {
+  background-color: #007bff;
+}
+
+.slidebtnd3 {
+  height: 80px;
+  width: 80px;
+  font-size: 33px;
+  color: orangered;
+  border-radius: 50%;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.sliderightdiv3 {
+  position: relative;
+  right: 25px;
+}
+.slideleftdiv3 {
+  position: relative;
+  left: 25px;
+}
+.div4 {
+  margin-top: 110px;
+  text-align: center;
+}
+.div5CardHeading {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(12, 80, 137);
+}
+
+a {
+  text-decoration: none;
+}
+.div5 {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.breakdiv2media2 {
+  display: none;
+}
+.breakdiv2media1 {
+  display: block;
+}
+.MadivAsia {
+  font-size: 30px;
+}
+
+.breakdiv2media3 {
+  display: none;
+}
+
+@media screen and (min-width: 751px) and (max-width: 1174px) {
+  body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .div1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+      url("https://preview.colorlib.com/theme/martine/img/xbreadcrumb.png.pagespeed.ic.OfmcEjG4sq.jpg");
+
+    /* background-color: rgb(6,38,73); */
+    height: 393px;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .packageContent {
+    padding: 0%;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Open sans", sans-serif;
+    line-height: 1.2em;
+    font-weight: 400;
+  }
+  .packageText {
+    font-family: "Open sans", sans-serif;
+    padding: 0%;
+    font-size: 50px;
+    height: fit-content;
+    font-weight: 400;
+    color: white;
+  }
+
+  .breakdiv2media2 {
+    display: block;
+  }
+  .breakdiv2media1 {
+    display: none;
+  }
+  .MadivAsia {
+    font-size: 30px;
+  }
+
+  .breakdiv2media3 {
+    display: none;
+  }
+
+  .div3dark {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .div2 {
+    margin-top: 110px;
+    text-align: center;
+  }
+
+  h2 {
+    /* font-size: 45px;
+        color: rgb(12, 62, 114);
+        line-height: 45px;
+        letter-spacing: 2px; */
+
+    font-size: 28px;
+    word-spacing: 0px;
+    line-height: 5px;
+    font-weight: 600;
+  }
+  p {
+    color: rgba(0, 0, 0, 0.4);
+    line-height: 28px;
+    word-spacing: 0.5px;
+  }
+
+  .checked {
+    color: rgb(252, 180, 47);
+    margin-left: 5px;
+  }
+
+  .hotelHeading {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(12, 80, 137);
+  }
+
+  .hotelcard {
+    width: 330px;
+   
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin-top: -10px;
+  }
+  .hotelcard > img {
+    width: 330px;
+    margin-right: 30px;
+  }
+  hr {
+    border: solid rgba(0, 0, 0, 0.2);
+    border-width: 0.1px;
+    width: 330px;
+  }
+
+  .hotel {
+    display: flex;
+    justify-content: flex-start;
+    
+    box-sizing: border-box;
+    padding-left: 23px;
+    flex-wrap: wrap;
+    margin-top: 77px;
+    width: 755px;
+    margin: auto;
+    margin-top: 78px;
+    
+  }
+
+  .hotelcontent {
+    line-height: 34px;
+  }
+
+  .div3 {
+    background-image: url("https://preview.colorlib.com/theme/martine/img/xevent_bg.png.pagespeed.ic.hDegBD_q05.jpg");
+    height: 650px;
+    margin-top: 110px;
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #slide1 {
+    width: 330px;
+    height: 500px;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 15px;
+    position: relative;
+  }
+
+  .slideContainer1 {
+    height: fit-content;
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #div3date {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .div3dark {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .btnPlan {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    background-color: #fe5c24;
+    padding: 17px 30px;
+    color: white;
+    border: 0px;
+    margin-top: 20px;
+  }
+
+  .btnPlan:hover {
+    background-color: #007bff;
+  }
+
+  .slidebtnd3 {
+    display: none;
+    height: 80px;
+    width: 80px;
+    font-size: 33px;
+    color: orangered;
+    border-radius: 50%;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .sliderightdiv3 {
+    position: relative;
+    right: 25px;
+  }
+  .slideleftdiv3 {
+    position: relative;
+    left: 25px;
+  }
+  .div4 {
+    margin-top: 110px;
+    text-align: center;
+  }
+  .div5CardHeading {
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(12, 80, 137);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .div5 {
+    margin-top: 75px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 330px 330px;
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+  .divcard > img {
+    width: 330px;
+  }
+
+  #div2img {
+    width: 85%;
+  }
+
+  .breakdiv2media1 {
+    display: none;
+  }
+  .breakdiv2media2 {
+    display: block;
+  }
+  .breakdiv2media3 {
+    display: none;
+  }
+
+  .MadivAsia {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 751px) {
+  body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .div1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+      url("https://preview.colorlib.com/theme/martine/img/xbreadcrumb.png.pagespeed.ic.OfmcEjG4sq.jpg");
+
+    /* background-color: rgb(6,38,73); */
+    height: 393px;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .packageContent {
+    padding: 0%;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Open sans", sans-serif;
+    line-height: 1.2em;
+    font-weight: 400;
+  }
+  .packageText {
+    font-family: "Open sans", sans-serif;
+    padding: 0%;
+    font-size: 50px;
+    height: fit-content;
+    font-weight: 400;
+    color: white;
+  }
+
+  .breakdiv2media2 {
+    display: none;
+  }
+  .breakdiv2media1 {
+    display: none;
+  }
+  .MadivAsia {
+    font-size: 30px;
+  }
+
+  .breakdiv2media3 {
+    display: block;
+  }
+
+  .hoteldark {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .div2 {
+    margin-top: 110px;
+    text-align: center;
+  }
+
+  h2 {
+    /* font-size: 45px;
+            color: rgb(12, 62, 114);
+            line-height: 45px;
+            letter-spacing: 2px; */
+
+    font-size: 28px;
+    word-spacing: 0px;
+    line-height: 35px;
+    font-weight: 400;
+  }
+  p {
+    color: rgba(0, 0, 0, 0.4);
+    line-height: 28px;
+    word-spacing: 0.5px;
+  }
+
+  .checked {
+    color: rgb(252, 180, 47);
+    margin-left: 5px;
+  }
+
+  .hotelHeading {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(12, 80, 137);
+  }
+
+  .hotelcard {
+    width: 330px;
+   
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin-top: -10px;
+  }
+  .hotelcard > img {
+    width: 433px;
+    margin-right: 30px;
+  }
+  hr {
+    border: solid rgba(0, 0, 0, 0.2);
+    border-width: 0.1px;
+    width: 433px;
+  }
+
+  .hotel {
+    display: flex;
+    justify-content: flex-start;
+    
+    box-sizing: border-box;
+    padding-left: 15px;
+    flex-wrap: wrap;
+    margin-top: 77px;
+    width: 463px;
+    margin: auto;
+    margin-top: 78px;
+    
+  }
+
+  .hotelcontent {
+    line-height: 34px;
+  }
+
+  .div3 {
+    background-image: url("https://preview.colorlib.com/theme/martine/img/xevent_bg.png.pagespeed.ic.hDegBD_q05.jpg");
+    height: 650px;
+    margin-top: 110px;
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  #slide1 {
+    width: 430px;
+    height: 472px;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 1px;
+    position: relative;
+  }
+
+  .slideContainer1 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #div3date {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .div3dark {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .btnPlan {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    background-color: #fe5c24;
+    padding: 17px 30px;
+    color: white;
+    border: 0px;
+    margin-top: 10px;
+  }
+
+  .btnPlan:hover {
+    background-color: #007bff;
+  }
+
+  .slidebtnd3 {
+    display: none;
+    height: 80px;
+    width: 80px;
+    font-size: 33px;
+    color: orangered;
+    border-radius: 50%;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .sliderightdiv3 {
+    position: relative;
+    right: 25px;
+  }
+  .slideleftdiv3 {
+    position: relative;
+    left: 25px;
+  }
+  .div4 {
+    margin-top: 110px;
+    text-align: center;
+  }
+  .div5CardHeading {
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(12, 80, 137);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .div5 {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-columns: 330px;
+    gap: 10px;
+    width: 400px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .divcard > img {
+    width: 400px;
+    margin-top: 20px;
+  }
+
+  #div2img {
+    width: 95%;
+  }
+
+  .breakdiv2media1 {
+    display: none;
+  }
+  .breakdiv2media2 {
+    display: none;
+  }
+  .breakdiv2media3 {
+    display: block;
+  }
+  .MadivAsia {
+    font-size: 30px;
+    margin-top: -5px;
+  }
+}
