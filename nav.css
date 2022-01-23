@@ -1,0 +1,204 @@
+
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    width: 100%;
+}
+main{
+  padding-top: 150px;
+}
+  /*navbar*/
+nav {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+align-items: center;
+position: fixed;
+z-index: 2;
+}
+nav:before {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#upper{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background-color: rgb(234,239,255);
+}
+#upper ul{
+    width: 28%;
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    margin: 0.5% 20% 0.5% 7%;
+}
+#upper ul li {
+    font-weight: 300;
+}
+#upper ul :nth-child(1) {
+    color: rgb(254,92,36);
+}
+#social{
+    width: 10%; 
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    margin: 0.5% 3% 0.5% 10%;
+}
+#upper img{
+    width: 15px;
+    height: 15px;
+}
+#tel{
+    display: flex; flex-wrap: nowrap;
+    gap: 5%;
+    margin: 0.5% 0% 0.5% 0%;
+    width: 10%;
+    height: 15px;
+}
+#tel p{
+  color: black;
+  font-size: small;
+  line-height: 0%;
+  padding-top: 15px;
+}
+#lower{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: rgb(255,255,255);  
+    border-bottom: 1px solid beige;      
+}
+#logo{
+    margin: 2% 10%;
+}
+#lower ul{
+    width: 40%;
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    margin: 2% 0%;
+}
+.item a:hover{
+    color: rgb(254,92,36);
+}
+.item a{
+    text-decoration: none;          
+    color: rgb(90,62,114);
+    font-size: large;
+}
+#lower button{
+    width: 8%;
+    height: 50px;
+    background-color: rgb(254,92,36);
+    color: whitesmoke;
+    border: 1px solid rgb(254,92,36);
+    margin: 1.5% 15%;
+    font-size: large;
+}
+#msnavdrop {
+    position: fixed;
+    visibility: hidden;
+    z-index: 5;
+    margin-top: 80px;
+    width: 100%;
+    height: 280px;
+    background-color: whitesmoke;
+}
+#msnavdrop > div {
+    font-size: 20px;
+    margin-left: 10%;
+    height: 280px;
+}
+#msnavdrop > div > div {
+    margin-top: 20px;
+    cursor: pointer;
+}
+#msnavdrop > div > div:hover {
+    color: rgb(254,92,36);
+}
+#msnavdrop > div > div > div {
+    margin-top: 10px;
+    padding: 5px 0 5px 20px;
+    border-radius: 5px;
+    width: 85%;
+}
+#msnavdrop > div > div > div {
+    color: black !important;
+    cursor: default;
+    font-size: 17px;
+}
+#msnavdrop > div > div > div > div,a {
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-left: 0;
+}
+.mssub {
+    display: none;
+}
+
+
+/*media-query*/
+@media only screen and (max-width: 1174px) {
+    #navbar {
+        display: flex;
+    }
+    #upper {
+        display: none;
+    }
+    #lower{
+        height: 60px;
+    }
+    #logo img{
+        margin-top: 20px;
+    }
+    #lower ul {
+        display: none;
+    }
+    .book {
+        display: none;
+    }
+    .item {
+        display: none;
+    }
+    #blogdrop {
+        display: none;
+    }
+    #pagesdrop {
+        display: none;
+    }
+
+    #burger {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 85%;
+        cursor: pointer;
+    }
+    #burger > div {
+        width: 90%;
+        height: 1px;
+        background-color: rgb(41, 41, 41);
+        border: 1px solid rgb(41, 41, 41);
+        margin: auto;
+    }
+}
+
+
+main{
+    padding-top: 150px;
+}

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARTINE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans&family=Montserrat&family=Nunito:wght@200&family=Open+Sans&family=PT+Sans&family=Quicksand:wght@500;600&family=Rubik&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="sameSec.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/5104106c4e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <div id="upper">
+        <ul>
+            <li>Top destinations</li>
+            <li>Asia</li>
+            <li>Europe</li>
+            <li>America</li>
+        </ul>
+        <div id="social">
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/128/1077/1077041.png"/></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png"/></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/128/2111/2111819.png"/></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/128/220/220377.png"/></a>
+        </div>
+        <div id="tel">
+            <a><img src="https://cdn-icons-png.flaticon.com/128/126/126509.png"/></a>
+            <p>+919889889989</p>
+        </div>
+    </div>
+    <div id="lower">
+        <div id="logo">
+            <img src="data:image/webp;base64,UklGRtABAABXRUJQVlA4TMMBAAAvaEAFEKdAkG1TsOX+ZlcQCCQB7C+6gEAgiXnbbQiybebPNKYP4QlWR6cHgwhClmTbcdvc+zAQwAPwPO1/swAeKSn5j+j/BFjcVmxTXDPetFNEDG9r3IaNcSsvmqWUuihJvh9t6e+hJGkfNJbyX6hLfI9+sjHGwPulhb5xBZGQ2maUWho0ytWvpanBaq0VwKy1KjSKhGKHnkQkFHuCAIYv8dwAZJJykcw8NihJGqAkJXHfF4s81icmUEnGQ6J37LYOveE1wOhtNzLJBiRS8m5yK5v8Xg3ILpqvksyAkOna6VKAeSfGCl0mcKvBwpJhXDssLsWngRQYyeoKAHBjANjZvQLAdrooAAjJ4OuZpCnJcQBgveZIX8crDAB215JLKZWrubSRHBdJ5IMlOk/2OtnkxXtjkiyRDCej+58CkkIyn9ImlSEfk513Ird6EpJiAD6iLLh/uHbTdwGY/ARd8iIkI/D78/Pzd+g7+MTQ+Vjp9gJbmLoKSWZ8fX9/f/8cbJNuOOUJsr0AdTnP3e8BslSH+jh8Y6evQPYofB3IywAukgFA21VdMooH7QWB5AUAKrswccLzprWq4WGbcxpePGopdcALAA==" alt="Martine."/>
+         </div>
+ 
+         <ul>
+             <li class="item"><a href="home.html">Home</a></li>
+             <li class="item"><a href="About.html">About</a></li>
+             <li class="item"><a href="packages.html">Packages</a></li>
+             <li id="blog" class="item"><a href="#">Blog</a></li>
+             <li id="pages" class="item"><a href="topPlaces.html">Top Places</a></li>
+         </ul>
+         <button class="book">Book Now</button>
+    </div>
+
+    <div id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</nav>
+<div id="blogdrop">
+    <div class="droplist">
+        <div><a href="">Blog</a></div>
+        <div><a href="">Single Blog</a></div>
+    </div>
+</div>
+<div id="pagesdrop">
+    <div class="droplist">
+        <div><a href="">Top Place</a></div>
+        <div><a href="">Tour Details</a></div>
+    </div>
+</div>
+
+<div id="msnavdrop">
+    <div>
+        <div id="msnavdrophome">Home</div>
+        <div id="msnavdropabout">About</div>
+        <div id="msnavdroppackages">Packages</div>
+        <div id="msnavdropblog">Blog</div>
+        <div id="msnavdroppages">Pages</div>
+        <div id="msnavdropcontact">Contact</div>
+    </div>
+</div>
+<div class="mssub">
+    <div id="msblogdropsub">
+        <div><a href="">Blog</a></div>
+        <div><a href="">Single Blog</a></div>
+        
+    </div>
+    <div id="mspagesdropsub">
+        <div><a href="">Top Place</a></div>
+        <div><a href="">Tour Details</a></div>
+    </div>
+</div>
+
+<script>
+    var blog = document.getElementById("blog");
+    var pages = document.getElementById("pages");
+
+    var blogdrop = document.getElementById("blogdrop")
+    var pagesdrop = document.getElementById("pagesdrop")
+
+    var count1 = 0;
+    var count2 = 0;
+
+    function showAndHideBlogdrop() {
+        if ( count1%2===0){
+            blogdrop.style.visibility = "visible"
+        }
+        else {
+            blogdrop.style.visibility = "hidden"
+        }
+        count1++
+    }
+    function showAndHidePagedrop() {
+        if ( count2%2===0){
+            pagesdrop.style.visibility = "visible"
+        }
+        else {
+            pagesdrop.style.visibility = "hidden"
+        }
+        count2++
+    }
+
+
+    blog.addEventListener('click', showAndHideBlogdrop);
+    pages.addEventListener('click', showAndHidePagedrop);
+
+
+
+
+    var burger = document.getElementById("burger")
+    var msnavdrop = document.getElementById("msnavdrop")
+
+    count = 2
+
+    function burgerAndCrossfunction () {
+        if ( count%2===0 ) {
+            burger.style.display = "flex"
+            msnavdrop.style.visibility = "visible"
+        }
+        else if ( count%2!=0 ) {
+            burger.style.display = "flex"
+            msnavdrop.style.visibility = "hidden"
+        }
+        count++
+    }
+
+    document.getElementById("burger").addEventListener('click', burgerAndCrossfunction)
+
+    var msnavdropblog = document.getElementById("msnavdropblog")
+    var msnavdroppages = document.getElementById("msnavdroppages")
+
+    var msnavdropblogsub = document.getElementById("msnavdropblogsub")
+    var msnavdroppagessub = document.getElementById("msnavdroppagessub")
+
+    var bcount = 2
+    var pcount = 2
+
+    function blogsub () {
+        if (bcount%2===0) {
+            msnavdropblog.appendChild(msnavdropblogsub)
+        }
+        else {
+            msnavdropblog.removeChild(msnavdropblog.childNodes[1]);
+        }
+        bcount++
+    }
+    function pagessub () {
+        if (pcount%2===0) {
+            msnavdroppages.appendChild(msnavdroppagessub)
+        }
+        else {
+            msnavdroppages.removeChild(msnavdroppages.childNodes[1]);
+        }
+        bcount++
+    }
+    msnavdropblog.addEventListener('click',blogsub)
+    msnavdroppages.addEventListener('click',pagessub)
+
+  </script>
+
+
+
+
+
+
+
+    <!-- *****banner***** -->
+    <div class="banner" >
+        <div class="container">
+            <div class="banner_text_iner">
+                <h1 class="text_inner1" style="text-align: center;">Saintmartine</h1>
+                <p class="text_inner2" style="text-align: center;">Let’s start your journey with us, your dream will come true</p>
+                <br>
+                <a href="#" class="btn_1">Discover Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- *****booking***** -->
+    <div class="main_booking_div">
+        <div class="booking_nav">
+            <ul class="nav_menu">
+                <li>
+                    <a href="#" class="nav-link">Hotel</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Tricket</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Place</a>
+                </li>
+            </ul>
+    
+        </div>
+        <br>
+        <br>
+        <form>
+            <select placeholder="Choose place" style="color:#007bff ;" class="booking">
+                <option selected>Choose place </span></option>
+                <option>One</option>
+                <option>Two</option>
+                <option>Three</option>
+               
+            </select>
+          
+    
+            <!-- <input type='date' reuired placeholder="CheckIn" class="booking"> -->
+            
+            <input  class="date" type="search" placeholder="Check in date" onfocus="(this.type='date')">
+            <input class="date" type="search" placeholder="Check out date" onfocus="(this.type='date')">
+            <select aria-placeholder="Persons" style="color:#007bff ;" class="booking">
+                <option selected>Persons</option>
+                <option>One</option>
+                <option>Two</option>
+                <option>Three</option>
+            </select>
+            <input class="search" type="submit" style="color: white;" value="Search">
+        </form>
+    </div>
+  
+
+    <div class="div4">
+      <h2 class="topPlacestoVisit" >Top Places to visit</h2>
+      <p style="text-align: center;" class="div3dark">
+        Waters make fish every without firmament saw had. Morning air subdue.
+        <br class="breakdiv2media1" />
+        Our. Air very one. <br class="breakdiv2media2" />
+        Whales grass is <br class="breakdiv2media3" />
+        fish whales winged.
+      </p>
+    </div>
+
+
+    <!-- ****title***** -->
+<div class="container">
+    
+    <div class="row">
+      <div class="pic1">
+        <div class="onHover">
+          <div class="inHover">
+            <a href="#">Travel</a>
+            <p class="sentpara">
+              <span class="saintmartineIceland">Saintmartine Iceland</span> <br />
+              Technaf, Bangladesh
+            </p>
+
+            <span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span>
+            <span style="color: white; font-size: 14px">(210 review)</span>
+          </div>
+        </div>
+      </div>
+      <div class="pic2">
+        <div class="onHover">
+          <div class="inHover">
+            <a href="#">Travel</a>
+            <p class="sentpara">
+              <span class="saintmartineIceland">Saintmartine Iceland</span> <br />
+              Technaf, Bangladesh
+            </p>
+
+            <span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span>
+            <span style="color: white; font-size: 14px">(210 review)</span>
+          </div>
+        </div>
+      </div>
+      <div class="pic3">
+        <div class="onHover">
+          <div class="inHover">
+            <a href="#">Travel</a>
+            <p class="sentpara">
+              <span class="saintmartineIceland">Saintmartine Iceland</span> <br />
+              Technaf, Bangladesh
+            </p>
+
+            <span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span>
+            <span style="color: white; font-size: 14px">(210 review)</span>
+          </div>
+        </div>
+      </div>
+      <div class="pic4">
+        <div class="onHover">
+          <div class="inHover">
+            <a href="#">Travel</a>
+            <p class="sentpara">
+              <span class="saintmartineIceland">Saintmartine Iceland</span> <br />
+              Technaf, Bangladesh
+            </p>
+
+            <span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span
+            ><span class="fa fa-star checked"></span>
+            <span style="color: white; font-size: 14px">(210 review)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="btn_2">
+        <a href="#" class="btn_2">Discover more</a>
+    </div>
+</div>
+<!-- slideshow -->
+<div class="div3">
+    <button class="slidebtnd3 slideleftdiv3">&#10094</button>
+    <div class="slideContainer1">
+      <div id="slide1">
+        <p style="color: rgb(254, 121, 65)">Upcoming event</p>
+        <h2 class="MadivAsia">Maldeve-Asia</h2>
+        <p id="" class="div3dark">
+          Waters make fish every without firmament saw had.
+          <br class="breakdiv2media1" /><br class="breakdiv2media3" /> 
+          Morning air <br class="breakdiv2media2" />
+          subdue. Our. Air very one. Whales <br class="breakdiv2media2" />
+          grass <br class="breakdiv2media3" />
+          is fish <br class="breakdiv2media1" />
+          whales winged.
+        </p>
+        <p class="div3dark">Date: <span id="div3date">12 Aug 2019</span></p>
+        <p class="div3dark">
+          Cost: <span id="div3date">Start from $820</span>
+        </p>
+        <p class="div3dark">
+          Organizer: <span id="div3date">Martine Agency</span>
+        </p>
+        <p class="div3dark">
+          Rating: <span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span>
+        </p>
+        <button class="btnPlan">Plan Details</button>
+      </div>
+    </div>
+    <button class="slidebtnd3 sliderightdiv3">&#10095</button>
+  </div>
+  <!-- top hotel and resturant -->
+  <div class="top_hotel">
+    <h2>Top Hotel & Restaurants</h2>
+    <p style="text-align: center;" class="div3dark">
+      Waters make fish every without firmament saw had.
+      <br class="breakdiv2media3" />
+      Morning air subdue.<br class="breakdiv2media1" />
+      Our. Air very one. <br class="breakdiv2media2" />
+      Whales grass is <br class="breakdiv2media3" />
+      fish whales winged.
+    </p>
+  </div>
+  
+  <!-- hotel images -->
+  <div class="hotel">
+    <div class="hotelcard">
+      <img
+        src="https://preview.colorlib.com/theme/martine/img/ind/xindustries_1.png.pagespeed.ic.NgzTtvACEc.webp"
+        alt=""
+      />
+
+      <p class="hotelHeading">Hotel Polonia</p>
+
+      <p class="hotelcontent">
+        <span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span>
+        <span style="color: rgba(0, 0, 0, 0.7); font-size: 14px"
+          >(210 review)</span
+        >
+        <br />
+        London, United Kingdom <br />
+        Date: 23 Aug 2019 <br />
+        Duration: 5 days <br />
+        <span style="color: rgba(0, 0, 0, 0.7)">From: </span><span style="color: red;">$500</span>
+      </p>
+      <hr />
+    </div>
+ <div class="hotelcard">
+      <img
+        src="https://preview.colorlib.com/theme/martine/img/ind/xindustries_2.png.pagespeed.ic.yhVVWAyvF1.webp"
+        alt=""
+      />
+
+      <p class="hotelHeading">Hotel Polonia</p>
+
+      <p class="hotelcontent">
+        <span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span>
+        <span style="color: rgba(0, 0, 0, 0.7); font-size: 14px"
+          >(210 review)</span
+        >
+        <br />
+        London, United Kingdom <br />
+        Date: 23 Aug 2019 <br />
+        Duration: 5 days <br />
+        <span style="color: rgba(0, 0, 0, 0.7)">From: </span><span style="color: red;">$500</span>
+      </p>
+      <hr />
+    </div>
+
+
+    <div class="hotelcard">
+      <img
+        src="https://preview.colorlib.com/theme/martine/img/ind/xindustries_3.png.pagespeed.ic.ppp-94uw-r.webp"
+        alt=""
+      />
+
+      <p class="hotelHeading">Hotel Polonia</p>
+
+      <p class="hotelcontent">
+        <span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span
+        ><span class="fa fa-star checked"></span>
+        <span style="color: rgba(0, 0, 0, 0.7); font-size: 14px"
+          >(210 review)</span
+        >
+        <br />
+        London, United Kingdom <br />
+        Date: 23 Aug 2019 <br />
+        Duration: 5 days <br />
+        <span style="color: rgba(0, 0, 0, 0.7)">From: </span><span style="color: red;">$500</span>
+      </p>
+      <hr />
+    </div>
+  </div>
+   <!-- reviews -->
+   <div class="div6">
+    <div class="div6a">
+      <h2 style="color: white">What they said</h2>
+      <div class="div6btndiv">
+        <button class="div6slidebutton" id="left"><</button
+        ><button class="div6slidebutton" id="right">></button>
+      </div>
+    </div>
+    <div class="div6slidecontainer">
+      <div class="div6slideof3cards">
+        <div class="div6card" id="div6card1">
+          <span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span>
+          <p style="color: white;">
+            Waters make fish every without <br class="breakdiv2media1" />
+            firmament saw had.Morning air <br class="breakdiv2media1" />
+            subdue. Our Air very one whales grass
+            <br class="breakdiv2media1" />
+            is fish whales winged night yielding
+            <br class="breakdiv2media1" />
+            land creeping that seed
+          </p>
+          <p style="color: white;">-Allen Miller</p>
+        </div>
+        <div class="div6card" id="div6card2">
+          <span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span>
+          <p style="color: white;">
+            Waters make fish every without <br class="breakdiv2media1" />
+            firmament saw had.Morning air <br class="breakdiv2media1" />
+            subdue. Our Air very one whales grass
+            <br class="breakdiv2media1" />
+            is fish whales winged night yielding
+            <br class="breakdiv2media1" />
+            land creeping that seed
+          </p>
+          <p style="color: white;">-Allen Miller</p>
+        </div>
+        <div class="div6card" id="div6card3">
+          <span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span
+          ><span class="fa fa-star checked"></span>
+          <p style="color: white;">
+            Waters make fish every without <br class="breakdiv2media1" />
+            firmament saw had.Morning air <br class="breakdiv2media1" />
+            subdue. Our Air very one whales grass
+            <br class="breakdiv2media1" />
+            is fish whales winged night yielding
+            <br class="breakdiv2media1" />
+            land creeping that seed
+          </p>
+          <p style="color: white;">-Allen Miller</p>
+        </div>
+      </div>
+    </div6>
+  </div>
+  <!-- services -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="div4">
+    <h2>We offered best services</h2>
+    <p style="text-align: center;" class="div3dark">
+      Waters make fish every without firmament saw had. Morning air subdue.
+      <br class="breakdiv2media1" />
+      Our. Air very one. <br class="breakdiv2media2" />
+      Whales grass is <br class="breakdiv2media3" />
+      fish whales winged.
+    </p>
+  </div>
+  <div class="div5">
+    <div class="divcard">
+      <img
+        src="https://preview.colorlib.com/theme/martine/img/xservices_1.png.pagespeed.ic.kadTQpnK1M.webp"
+        alt=""
+      />
+      <p class="div5CardHeading"><a class="hotelAnchor" href=""> Transportation</a></p>
+      <p style="line-height: 2px">All transportaion cost we bear</p>
+    </div>
+    <div class="divcard">
+      <img
+        src="https://preview.colorlib.com/theme/martine/img/xservices_2.png.pagespeed.ic.4Rar7bZu7k.webp"
+        alt=""
+      />
+      <p class="div5CardHeading"><a class="hotelAnchor" href=""> Guidence</a></p>
+      <p style="line-height: 2px">We offer the best guidence for you</p>
+    </div>
+    <div class="divcard">
+      <img
+        src="https://preview.colorlib.com/theme/martine/img/xservices_3.png.pagespeed.ic.xk2bNEWcwv.webp"
+        alt=""
+      />
+      <p class="div5CardHeading"><a class="hotelAnchor" href=""> Accomodation</a></p>
+      <p style="line-height: 2px">Luxarious and comfortable</p>
+    </div>
+    <div class="divcard">
+      <img
+        src="https://preview.colorlib.com/theme/martine/img/xservices_4.png.pagespeed.ic.P1jY3Sf55m.webp"
+        alt=""
+      />
+      <p class="div5CardHeading"><a class="hotelAnchor" href=""> Discover world </a></p>
+      <p style="line-height: 2px">Best tour plan for your next tour</p>
+    </div>
+  </div>
+ 
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div id="box">
+        <div id="b1">
+            <h4 id="b1s1">DISCOVER DESTINATION</h4>
+            <ul id="b1s2">
+                <li><a href="#">Miami, USA</a></li>
+                <li><a href="#">California, USA</a></li>
+                <li><a href="#">London, UK</a></li>
+                <li><a href="#">London, UK</a></li>
+                <li><a href="#">MountEverast, India</a></li> 
+                <li><a href="#">Sydney, Australia</a></li> 
+            </ul>
+            <ul id="b1s3">
+                <li><a href="#">Miami, USA</a></li>
+                <li><a href="#">California, USA</a></li>
+                <li><a href="#">London, UK</a></li>
+                <li><a href="#">London, UK</a></li>
+                <li><a href="#">MountEverast, India</a></li> 
+                <li><a href="#">Sydney, Australia</a></li> 
+            </ul>
+        </div>
+        <div id="b2">
+            <h4>SUBSCRIBE NEWSLETTER</h4>
+            <form>
+                <input type="email" placeholder="Your Email Address" >
+                <button style="color: white;"><i class="fas fa-paper-plane"></i></button>
+            </form>
+            <p>Subscribe our newsletter to get update news and offers</p>
+        </div>
+        <div id="b3">
+            <h4>CONTACT US</h4>
+            <p>4156, New garden, New York, USA +880 362 352 783</p>
+            <p>contact@martine.com</p>
+            <div>
+                <a href="" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-pinterest"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="text">Copyright ©2022 All rights reserved | This template is made by <b>Colorib</b></div>
+</footer>
+</body>
+
+</html>

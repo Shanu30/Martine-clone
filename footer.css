@@ -1,0 +1,142 @@
+
+footer{
+    width: 100%;
+    background-color: rgb(22,43,69);
+    padding-top: 5%;
+    margin-top: 50px;
+    height: 560px;
+}
+#box{
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    gap: 5%;
+    flex-wrap: nowrap;
+    background-color: rgb(22,43,69);
+}
+#box h4{
+    font-size: large;
+    font-weight: 100;
+}
+#text{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(8,34,58);
+    color: aliceblue;
+    font-size: large;
+    text-align: center;
+    padding-top: 2.5%;
+}
+#text b{
+    color: rgb(254,92,36);
+    font-weight: 100;
+}
+#b1{
+    width: 33%;
+    padding: 2%;
+    display: grid;
+    color: aliceblue;
+    text-decoration: none;
+    grid-template-areas: "a a"
+                         "b c"
+                         "b c";
+}
+#b1s1{
+    grid-area: a;
+    margin-left: 10%;
+}
+#b1s2{
+    grid-area: b;
+    list-style: none;
+    line-height: 200%;
+}
+#b1s3{
+    grid-area: c;
+    list-style: none;
+    line-height: 200%;
+}
+#b1 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#b2{
+    width: 33%;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+#b2 input{
+    height: 50px;
+    width: 60%;
+    background-color: rgb(9,39,66);
+    border: 2px solid rgb(9,39,66);
+}
+#b2 button{
+    height: 50px;
+    width: 13%;
+    background-color: rgb(254,92,36);
+    border: 2px solid rgb(254,92,36);
+}
+#b2 img{
+    height: 15px;
+    width: 15px;
+}
+#b2 p{
+    font-size: larger;
+    color: aliceblue;
+}
+#b3{
+    width: 33%;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+#b3>h4+p {
+    font-size: large;
+    color: aliceblue;
+}
+#b3>p+p {
+    color: rgb(254,92,36);
+}
+#b3 img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 1174px) {
+    footer{
+        width: 100%;
+        background-color: rgb(22,43,69);
+        padding-top: 5%;
+        height: 1060px;
+    }
+    #box{
+        display: flex;
+        flex-wrap: wrap;
+        height: 1000px;
+        background-color: rgb(22,43,69);
+    }
+    #b1{
+        width: 90%;
+        margin: auto;
+    }
+    #b2{
+        width: 90%;
+        margin: auto;
+    }
+    #b3{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
