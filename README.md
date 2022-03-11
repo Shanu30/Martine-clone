@@ -6,19 +6,19 @@ Zostel is one of the largest and oldest networks of hostels and homes in India.<
 <ol >
 <li>
  <h3>Landing Page</h3><br>
-<img  align="center" src="imgs/Home.png" alt="Landing Page" >
+<img  align="center" src="imgs/" alt="Landing Page" >
 </li>
 <li>
 <h3>REsponsiveness</h3><br>
-<img  align="center" src="imgs/Responsive.png" alt="Responsive" >
+<img  align="center" src="imgs/" alt="Responsive" >
 </li>
 <li>
 <h3>Packages page</h3><br>
-<img  align="center" src="imgs/Packages.png" alt="Packages Page" >
+<img  align="center" src="imgs/" alt="Packages Page" >
 </li>
 <li>
 <h3>Footer</h3><br>
-<img  align="center" src="imgs/Footer.jpg" alt="Footer Page" >
+<img  align="center" src="imgs/" alt="Footer Page" >
 </li>
 </p>
 </ol>
