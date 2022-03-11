@@ -17,7 +17,7 @@ nav {
   }
   #upper{
     width: 100%;
-    height: 60px;
+    height: 50px;
     display: flex;
     background-color: rgb(234,239,255);
   }
@@ -26,7 +26,7 @@ nav {
     display: flex;
     list-style: none;
     gap: 10%;
-    margin: 0.5% 20% 0.5% 7%;
+    margin: 1% 20% 0.5% 7%;
   }
   #upper ul li {
     font-weight: 300;
