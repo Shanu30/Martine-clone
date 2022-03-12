@@ -1,6 +1,7 @@
+
 # MARTINE CLONE
 <h3>About website</h3>
-Zostel is one of the largest and oldest networks of hostels and homes in India.<br>
+Martine is a travel purpose website which can be used to books tickets for hotels and events.<br>
 <h3>Tech-stack used</h3>
 <p align="center">
 <ol >
@@ -38,5 +39,6 @@ Zostel is one of the largest and oldest networks of hostels and homes in India.<
 ### Rini  [GitHub](https://github.com/rini001) - [LinkedIn](https://www.linkedin.com/in/renaissance-june001)
 
 ### Shanu [Github](https://github.com/Shanu30) - [LinkedIn](https://www.linkedin.com/in/kumar-shanu-a73636140)
+
 
 
