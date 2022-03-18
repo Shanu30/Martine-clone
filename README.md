@@ -34,7 +34,9 @@ We attempted to create a clone of Martine's website in this project. We were abl
 3) JavaScript
 4) DOM
 
-
+## Features :-
+1) Hamburger type navbar
+2) Fully responsive upto 458px
 
 ## Contributions:-
 
