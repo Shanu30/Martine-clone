@@ -2,6 +2,8 @@
 # MARTINE CLONE
 <h3>About website</h3>
 Martine is a travel purpose website which can be used to books tickets for hotels and events.<br>
+
+We attempted to create a clone of Martine's website in this project. We were able to clone the front end with great precision and quality using our efforts and the technological stack that we had learned so far at the masai school.
 <h3>Tech-stack used</h3>
 <p align="center">
 <ol >
