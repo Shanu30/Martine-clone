@@ -4,7 +4,7 @@
 Martine is a travel purpose website which can be used to books tickets for hotels and events.<br>
 
 <a href="http://project-1-martine.vercel.app/"  >Click here for the live demo</a>
-<h3>Tech-stack used</h3>
+
 <p align="center">
 <ol >
 <li>
